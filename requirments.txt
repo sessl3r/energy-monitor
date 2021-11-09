@@ -1,0 +1,2 @@
+platformio==5.2.3
+pyserial==3.4
