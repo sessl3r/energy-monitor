@@ -1,0 +1,13 @@
+[Unit]
+Description=Energy Poll Monitor
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/tmp
+ExecStart=/home/tobias/Lokal/energy-monitor/read-to-influx.sh /dev/ttyUSB0 verbrauch
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
