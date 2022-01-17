@@ -10,9 +10,9 @@ EnergyMonitor emonL3;
 
 void setup() {
 	Serial.begin(115200);
-	emonL1.current(0, 22);
-	emonL2.current(1, 22);
-	emonL3.current(2, 22);
+	emonL1.current(0, 26.4);
+	emonL2.current(1, 26.4);
+	emonL3.current(2, 26.4);
 }
 
 void loop() {
